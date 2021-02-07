@@ -5,5 +5,6 @@ export default function (path) {
     icons: true,
     hidden: true,
     stylesheet: `${__dirname}/main.css`,
+    filter: (file) => file !== '.DS_Store',
   });
 }
