@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js",
-    "build": "babel-node index.js",
+    "start": "babel-node index.js",
+    "hot": "nodemon --exec babel-node index.js",
     "lint": "eslint ."
   },
   "devDependencies": {
