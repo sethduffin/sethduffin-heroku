@@ -1,0 +1,111 @@
+/* Common */
+@import 'common/theme.css';
+@import 'common/cards.css';
+@import 'common/header.css';
+@import 'common/icon.css';
+
+/* Views */
+@import 'views/home.css';
+
+html {
+  font-family: 'Helvetica Neue';
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  background-color: var(--background);
+  font-size: 1.2em;
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+}
+
+main {
+  max-width: 1440px;
+  margin: auto;
+  padding: 2em;
+  padding-bottom: 4em;
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 1em;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: cadetblue;
+}
+
+a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+a.to-top {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1.5em;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gainsboro;
+  padding: 0 2em 0 2em;
+  font-size: 0.9em;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  height: 2em;
+}
+
+footer p {
+  margin: 0;
+}
+
+span.no-break {
+  white-space: nowrap;
+}
+
+dt {
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+
+blockquote {
+  font-style: italic;
+  color: dimgray;
+  margin: 1em;
+}
+
+blockquote:before {
+  content: '〝';
+  font-style: normal;
+}
+
+blockquote:after {
+  content: '〞';
+  font-style: normal;
+}

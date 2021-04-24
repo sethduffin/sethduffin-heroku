@@ -5,14 +5,18 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
-    "hot": "nodemon --exec babel-node index.js",
-    "lint": "eslint ."
+    "start-dev": "nodemon --exec babel-node index.js",
+    "lint": "eslint .",
+    "fetchProducts": "babel-node scripts/fetchProducts.js public/sandbox/db/urls.txt public/sandbox/db/products.json"
   },
   "devDependencies": {
+    "axios": "^0.21.1",
     "eslint": "^7.16.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.0",
+    "html-entities": "^2.3.2",
+    "node-html-parser": "^3.1.6",
     "nodemon": "^1.18.9",
     "prettier": "^2.2.1"
   },
