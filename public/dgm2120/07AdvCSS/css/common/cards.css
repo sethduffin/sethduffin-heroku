@@ -8,7 +8,7 @@
   list-style-type: none;
 }
 
-.cards li, .card {
+.cards li {
   margin: 0.5em;
   padding: 2em;
   border-radius: 0.5em;
@@ -26,17 +26,12 @@
   transition: transform 250ms, box-shadow 250ms;
 }
 
-.card {
-  margin: unset;
-}
-
 .cards:not(.no-hover) li:hover {
   box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.14);
   transform: scale(1.02);
 }
 
-.cards li.align-left, .card.align-left {
-  align-items: flex-start;
+.cards li.align-left {
   text-align: left;
 }
 
