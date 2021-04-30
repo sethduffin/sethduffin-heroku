@@ -16,12 +16,20 @@ function initPasteButtons() {
       .catch(() => null);
   }
 
+  function removeButton(button) {
+    $(button).parent().find('input').css('border-radius', '5px');
+    $(button).remove();
+  }
+
   $('.paste-button').each(async function () {
-    if (navigator.clipboard.readText) {
-      $(this).click(paste);
-    } else {
-      $(this).parent().find('input').css('border-radius', '5px');
-      $(this).remove();
+    try {
+      if (navigator.clipboard.readText) {
+        $(this).click(paste);
+      } else {
+        removeButton(this);
+      }
+    } catch {
+      removeButton(this);
     }
   });
 }
