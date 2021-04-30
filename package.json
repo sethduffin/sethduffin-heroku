@@ -6,6 +6,7 @@
   "scripts": {
     "start": "babel-node index.js",
     "start-dev": "nodemon --exec babel-node index.js",
+    "copy-beta": "cp -a public/beta/. ",
     "lint": "eslint .",
     "fetchProducts": "babel-node scripts/fetchProducts.js public/sandbox/db/urls.txt public/sandbox/db/products.json"
   },
