@@ -7,6 +7,25 @@ function setImageVars() {
   });
 }
 
+function initPasteButtons() {
+  function paste(e) {
+    const input = $(e.target).parent().find('input');
+    navigator.clipboard
+      .readText()
+      .then((text) => input.val(text))
+      .catch(() => null);
+  }
+
+  $('.paste-button').each(async function () {
+    if (navigator.clipboard.readText) {
+      $(this).click(paste);
+    } else {
+      $(this).parent().find('input').css('border-radius', '5px');
+      $(this).remove();
+    }
+  });
+}
+
 function renderProduct(product) {
   const { name, price, image, url } = product;
 
@@ -51,6 +70,7 @@ async function renderProducts() {
 $(window).on('load', async () => {
   await renderProducts();
   setImageVars();
+  initPasteButtons();
 });
 
 $(window).on('resize', () => {
