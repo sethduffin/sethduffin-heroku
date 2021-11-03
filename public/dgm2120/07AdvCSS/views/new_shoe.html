@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shoe Crew | New Shoe</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main>
+      <!-- Header -->
+      <header>
+        <div class="logo">
+          <h1 id="top">
+            <a href="home.html" class="logo__text"
+              >shoe<span class="outline">crew</span></a
+            >
+          </h1>
+          <h3>The Universal Shoe Collection</h3>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="trending.html">Trending</a></li>
+            <!-- <li><a href="collections.html">Collections</a></li> -->
+            <li><a href="about.html">About</a></li>
+            <li class="btn active">
+              <a href="new_shoe.html">
+                <i class="material-icons"> add </i>
+                <span>New Shoe</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Page Body -->
+      <div class="page">
+        <h2>Add New Shoe</h2>
+        <form action="form_submitted.html">
+          <div class="grid">
+            <div>
+              <h4>Shoe Information</h4>
+              <fieldset>
+                <label>
+                  <span>Name</span>
+                  <input type="text" name="name" placeholder="Nike Air Force 1 '07" required />
+                </label>
+                <div>
+                  <label>
+                    <span>Brand</span>
+                    <input type="text" placeholder="Nike" name="brand" />
+                  </label>
+                  <label>
+                    <span>Price $</span>
+                    <input type="number" name="price" placeholder="90" required />
+                  </label>
+                </div>
+                <label>
+                  <span>Product URL</span>
+                  <div class="input-button">
+                    <input type="url" name="url" required />
+                    <button type="button" class="paste-button">
+                      <i class="material-icons"> content_paste </i>Paste
+                    </button>
+                  </div>
+                </label>
+                <label>
+                  <span>Image URL</span>
+                  <div class="input-button">
+                    <input type="url" name="image" />
+                    <button type="button" class="paste-button">
+                      <i class="material-icons"> content_paste </i>Paste
+                    </button>
+                  </div>
+                </label>
+                <label>
+                  <span>Description</span>
+                  <textarea name="description" ></textarea>
+                </label>
+                <label class="radio">
+                  <span>Category</span>
+                  <label>
+                    <input type="radio" name="category" />
+                    <span>Lifestyle</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="category" />
+                    <span>Active</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="category" />
+                    <span>Sports</span>
+                  </label>
+                </label>
+              </fieldset>
+            </div>
+            <div>
+              <h4>Your Information</h4>
+              <fieldset>
+                <label>
+                  <span>Name</span>
+                  <input type="name" name="userName" />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="userEmail" />
+                </label>
+                <label>
+                  <span>Phone</span>
+                  <input type="tel" name="userPhone" />
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="privacy" />
+                  <span>Submit Anonymously</span>
+                </label>
+                <label>
+                  <span>Account Type</span>
+                  <select name="pets" id="pet-select">
+                    <option value=""></option>
+                    <option value="dog">Guest</option>
+                    <option value="cat">Member</option>
+                    <option value="hamster">Staff</option>
+                </select>
+                </label>
+              </fieldset>
+            </div>
+            <div class="button-container">
+              <button class="btn" type="submit">ADD SHOE</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2021 &bull; Shoe Crew &bull; Built by Seth Duffin</p>
+    </footer>
+    <div class="gradient" />
+  </body>
+</html>

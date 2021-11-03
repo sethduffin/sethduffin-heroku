@@ -1,0 +1,29 @@
+.flex-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 32px;
+}
+
+.media-item {
+  border-radius: 0.5em;
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.05); 
+  background: white;
+}
+
+@media (max-width: 840px) {
+  .flex-row {
+    grid-template-columns: unset !important;
+    grid-auto-flow: row;
+    grid-gap: 16px;
+  }
+}
+
+
+.about .button {
+  margin: 0;
+  width: unset;
+}
+
+p.no-bottom {
+  margin-bottom: 0;
+}

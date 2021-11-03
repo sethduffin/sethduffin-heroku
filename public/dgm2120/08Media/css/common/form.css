@@ -1,0 +1,144 @@
+form .grid {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr; 
+  grid-gap: 24px;
+}
+
+form .grid > div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media(max-width: 800px) {
+  form .grid {
+    grid-template-columns: unset;
+  }
+}
+
+fieldset {
+  display: grid;
+  min-width: 200px;
+  padding: 24px;
+  background-color: white;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.05);
+  grid-gap: 24px;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+fieldset > div {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 24px;
+}
+fieldset label {
+  display: grid;
+  grid-gap: 8px;
+  font-size: 14px;
+}
+
+fieldset label span {
+  color: gray;
+}
+
+input, textarea, select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  flex: 1;
+  min-width: 100px;
+  font-family: var(--font);
+}
+
+select {
+   -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 6px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 70px;
+  max-height: 200px;
+}
+
+.input-button {
+  display: flex;
+  position: relative;
+}
+
+.input-button input {
+  border-radius: 5px 0 0 5px;
+  margin-right: 0;
+}
+
+.input-button button {
+  border: solid 1px lightgray;
+  border-left: none;
+  background: var(--background);
+  border-radius: 0 5px 5px 0;
+  font-size: 16px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  color: dimgray;
+  margin-left: 0;
+}
+
+.input-button i {
+  font-size: 20px;
+  padding-right: 6px;
+}
+
+label.checkbox, .radio label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 16px;
+}
+
+label.radio span {
+  font-size: 16px;
+}
+
+.radio label {
+  margin-left: 8px;
+}
+
+label.radio label > span {
+  font-size: 14px;
+  padding-top: 4px;
+  padding-left: 4px; 
+}
+
+input[type=checkbox], input[type=radio] {
+  min-width: 0;
+  flex: unset;
+  width: 24px;
+  height: 24px;
+  margin-left: 0px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  padding: 12px 16px;
+  margin: 24px;
+  font-size: 16px;
+  background: cadetblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5em;
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.05);
+  border: none;
+  width: 100%;
+}

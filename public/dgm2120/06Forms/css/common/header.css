@@ -1,0 +1,71 @@
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.logo .outline {
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1px black;
+}
+.logo a {
+  color: black;
+}
+.logo a:hover {
+  opacity: 1;
+  color: cadetblue;
+  text-decoration: none;
+}
+.logo a:hover .outline {
+  -webkit-text-stroke: 1px cadetblue;
+}
+.logo h1 {
+  margin: 0;
+  font-size: 3.5em;
+}
+.logo h3 {
+  margin: 0 1em 0.5em 1em;
+  font-size: 1em;
+  font-weight: 400;
+  color: gray;
+  white-space: nowrap;
+}
+/* Navigation Styling */
+nav a {
+  margin: 0.30em;
+  padding: 0.70em;
+  font-size: 1em;
+  white-space: nowrap;
+}
+nav li.btn a {
+  padding-right: 0.90em;
+  background: cadetblue;
+  color: white;
+  border-radius: 10px;
+}
+nav li.btn i {
+  position: relative;
+  top: 0.2em;
+}
+nav li.btn a:hover {
+  text-decoration: none;
+}
+nav li.btn.active a {
+  background: gray;
+  color: white;
+  text-decoration: none;
+}
+nav li.active a {
+  color: gray;
+  text-decoration: underline;
+}
+nav ul {
+  display: flex;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  list-style-type: none;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
