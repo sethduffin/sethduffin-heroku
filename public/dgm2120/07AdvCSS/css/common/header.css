@@ -1,5 +1,15 @@
 
 /* Logo Styling */
+.shoe-logo {
+  height: 100px;
+  width: 100px;
+  margin-right: 0.7em;
+}
+
+.shoe-logo:hover {
+  filter: invert(57%) sepia(8%) saturate(1536%) hue-rotate(133deg) brightness(99%) contrast(91%);
+}
+
 .logo {
   display: flex;
   flex-direction: row;
