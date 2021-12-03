@@ -27,7 +27,7 @@ body {
 .gradient {
   position: absolute;
   z-index: -1;
-  background: linear-gradient(var(--background), gainsboro);
+  background: linear-gradient(#eeeeee, gainsboro);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
