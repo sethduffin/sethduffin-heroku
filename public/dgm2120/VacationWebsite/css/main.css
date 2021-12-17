@@ -1,0 +1,129 @@
+/* Common */
+@import 'common/theme.css';
+@import 'common/cards.css';
+@import 'common/header.css';
+@import 'common/icon.css';
+@import 'common/form.css';
+@import 'common/table.css';
+
+/* Views */
+@import 'views/home.css';
+@import 'views/about.css';
+
+html {
+  --font: 'Helvetica Neue';
+  font-family: var(--font);
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-size: 1.2em;
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.gradient {
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(var(--background), gainsboro);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+main {
+  background-color: var(--background);
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 2em;
+  padding-bottom: 4em;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 600px) {
+  body {
+    /*font-size: 1em;*/
+  }
+  main {
+    padding: 1em;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: cadetblue;
+}
+
+a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+a.to-top {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1.5em;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: gainsboro;
+  padding: 0 2em 0 2em;
+  font-size: 0.9em;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  height: 2em;
+}
+
+footer p {
+  margin: 0;
+}
+
+span.no-break {
+  white-space: nowrap;
+}
+
+dt {
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+
+blockquote {
+  font-style: italic;
+  color: dimgray;
+  margin: 1em;
+}
+
+blockquote:before {
+  content: '〝';
+  font-style: normal;
+}
+
+blockquote:after {
+  content: '〞';
+  font-style: normal;
+}

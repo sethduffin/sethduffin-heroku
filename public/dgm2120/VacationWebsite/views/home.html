@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shoe Crew</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main>
+      <!-- Header -->
+      <header>
+        <div class="logo">
+          <h1 id="top">
+            <a href="home.html" class="logo__text"
+              >shoe<span class="outline">crew</span></a
+            >
+          </h1>
+          <h3>The Universal Shoe Collection</h3>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+          <ul>
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="trending.html">Trending</a></li>
+            <!-- <li><a href="collections.html">Collections</a></li> -->
+            <li><a href="about.html">About</a></li>
+            <li class="btn">
+              <a href="new_shoe.html">
+                <i class="material-icons"> add </i>
+                <span>New Shoe</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Page Body -->
+      <div class="page">
+        <div class="intro">
+          <div>
+            <p>
+              Browse all your favorite shoe <span>brands in one place.</span>
+            </p>
+            <ul class="cards small">
+              <div>
+                <li>
+                  <object class="icon" data="../assets/nike.svg"></object>
+                </li>
+                <li>
+                  <object class="icon" data="../assets/air jordan.svg"></object>
+                </li>
+                <li>
+                  <object class="icon" data="../assets/converse.svg"></object>
+                </li>
+              </div>
+              <div>
+                <li>
+                  <object
+                    class="icon"
+                    data="../assets/under armor.svg"
+                  ></object>
+                </li>
+                <li>
+                  <object class="icon" data="../assets/adidas.svg"></object>
+                </li>
+                <li>
+                  <object class="icon" data="../assets/vans.svg"></object>
+                </li>
+              </div>
+            </ul>
+            <p>Get notified of new drops.</p>
+            <ul class="cards small">
+              <li class="align-left truncate">
+                <object
+                  class="icon notification"
+                  data="../assets/notification.svg"
+                ></object>
+                <span class="truncate"
+                  >Nike Air Force 1 ’07 in stock on nike.com</span
+                >
+              </li>
+            </ul>
+            <p>Add shoes you've found to shoe crew.</p>
+            <ul class="cards small">
+              <li>
+                <object
+                  class="icon notification"
+                  data="../assets/profile.svg"
+                ></object
+                >Sign up
+              </li>
+              <li>Login</li>
+            </ul>
+          </div>
+          <figure>
+            <img
+              src="https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_880/d762c5e2-ae49-4208-99df-484594b51e5f/air-force-1-07-mens-shoe-xDpsTk.png"
+              alt="Nike Air Force 1 '07"
+            />
+            <figcaption>Nike Air Force 1 '07</figcaption>
+          </figure>
+        </div>
+
+        <h2>Featured</h2>
+        <ul id="featured" class="cards grid products"></ul>
+
+        <br />
+
+        <h3 id="test">How it Works</h3>
+        <p>
+          Crew members find and create collections from different shoe
+          companies. Our partners provide us with <em>exclusive deals</em> and
+          tips on upcoming drops that can all be found on Shoe Crew.
+        </p>
+        <p>
+          Browse through our
+          <a href="collections.html">curated collections</a> to discover shoes
+          for you! Shoe Crew simply redirects you to the shoe's manufacture to
+          continue your seamless shopping experience.
+        </p>
+        <p>
+          Join the crew to receive notifications when your shoes are back in
+          stock and contribute to the community. Share shoes you've found for
+          others to discover.
+        </p>
+        <br />
+
+        <h3>Meet the Crew</h3>
+        <ul class="cards contacts">
+          <li>
+            <h4>Sam Baker</h4>
+            <blockquote>
+              I love staying in-the-know about new shoe drops.
+            </blockquote>
+          </li>
+          <li>
+            <h4>Alyssa Bellnap</h4>
+            <blockquote>
+              It's so easy to find comfortable and cool
+              <br />shoes that match your fit.
+            </blockquote>
+          </li>
+        </ul>
+        <a href="#top" class="to-top">Back to Top</a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2021 &bull; Shoe Crew &bull; Built by Seth Duffin</p>
+    </footer>
+    <div class="gradient" />
+  </body>
+</html>
