@@ -11,8 +11,10 @@ const root = `${__dirname}/public`;
 const app = express();
 
 /**
- * New subdomains must also be added to the Namecheap control pannel:
- * https://ap.www.namecheap.com/Domains/DomainControlPanel/sethduffin.com/advancedns
+ * New subdomains must also be added to the Namecheap control pannel and added
+ * to the Heroku app settings:
+ *  - https://ap.www.namecheap.com/Domains/DomainControlPanel/sethduffin.com/advancedns
+ *  - https://dashboard.heroku.com/apps/sethduffin/settings
  */
 const subdomains = {
   // sandbox: 'sandbox',
