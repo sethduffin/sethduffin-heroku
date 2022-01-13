@@ -6,7 +6,7 @@ import serveIndex from './serve-index';
 
 const port = process.env.PORT || 5000;
 const domain = process.env.DOMAIN || 'localhost';
-const root = `${__dirname}/`;
+const root = `${__dirname}/public`;
 
 const app = express();
 
@@ -15,9 +15,9 @@ const app = express();
  * https://ap.www.namecheap.com/Domains/DomainControlPanel/sethduffin.com/advancedns
  */
 const subdomains = {
-  // sandbox: 'public/sandbox',
-  // dgm2120: 'public/dgm2120',
-  dev: 'public/dev',
+  // sandbox: 'sandbox',
+  // dgm2120: 'dgm2120',
+  dev: 'dev',
 };
 
 Object.entries(subdomains).forEach(([sub, path]) => {
