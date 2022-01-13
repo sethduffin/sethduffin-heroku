@@ -20,7 +20,7 @@ const subdomains = {
   dev: 'public/dev',
 };
 
-Object.items(subdomains).forEach(([sub, path]) => {
+Object.entries(subdomains).forEach(([sub, path]) => {
   const router = express.Router();
   router.use(express.static(`${root}/${path}`));
   router.use(serveIndex(`${root}/${path}`));
