@@ -17,7 +17,7 @@ const app = express();
 const subdomains = {
   // sandbox: 'public/sandbox',
   // dgm2120: 'public/dgm2120',
-  dev: 'public',
+  dev: 'public/dev',
 };
 
 Object.items(subdomains).forEach(([sub, path]) => {
